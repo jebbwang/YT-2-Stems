@@ -20,11 +20,11 @@ Result: a folder of stems (vocals, drums, bass, other, etc.) plus BPM + key read
 |                | Details |
 |----------------|---------|
 | **Drag-and-drop / File picker** | Load `mp3 / wav / flac / m4a` or paste a YouTube/SoundCloud URL |
-| **Model selector** | `htdemucs`, `mdx`, fine-tuned, 6-stem, 2-stem checkbox |
-| **BPM + Key**  | Essentia `RhythmExtractor2013` & `KeyExtractor` |
-| **Live status**| Download → Transcode → Split with % progress |
-| **Pure Python**| Single `yt2stems.py` (≈300 LOC) + PySide 6 GUI |
-| **One-file build** | `pyinstaller --onefile --noconsole yt2stems.py` |
+| **Model selector** | • `htdemucs` (4 stems, fast)<br>• `htdemucs_ft` (4 stems, fine-tuned)<br>• `mdx` (4 stems, fastest)<br>• `mdx_extra_q` (4 stems, highest quality)<br>• `hdemucs_mmi` (6 stems, adds guitar & piano)<br>• Optional 2-stem mode (vocals + accompaniment) |
+| **Audio settings** | Configurable MP3 bitrate (96k - 320k) |
+| **BPM + Key**  | Automatic tempo and musical key detection via Essentia |
+| **Live status**| Real-time progress tracking and detailed logging for:<br>• Download/file loading<br>• MP3 transcoding<br>• Stem separation<br>• BPM/key analysis |
+| **Output** | • Organized output folder with stems<br>• Original MP3 preserved at chosen quality |
 
 ---
 
