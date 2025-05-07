@@ -28,21 +28,30 @@ Result: a folder of stems (vocals, drums, bass, other, etc.) plus BPM + key read
 
 ---
 
-Dependencies are managed via `requirements.txt`—no further prerequisites needed.
+## 📦 Prerequisites
+
+| Tool | Why | Install |
+|------|-----|---------|
+| **Python 3.9+** | runtime | [python.org](https://python.org) |
+| **FFmpeg**      | MP3 transcode | `brew install ffmpeg` / `choco install ffmpeg` |
+
+Dependencies are managed via `requirements.txt`
+
+---
 
 ## 🚀 Quick Start
 
 ```bash
 # clone
-git clone https://github.com/jebbwang/YT-2-Stems.git
+git clone https://github.com/yourname/yt2stems.git
 cd yt2stems
 
-# venv
+# venv (recommended to isolate dependencies)
 python3 -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
 
-# install deps  (note: numpy is pinned <2 for Essentia)
+# install dependencies
 pip install -r requirements.txt
 
 # run
-python3 yt2stems.py```
+python3 yt2stems.py
