@@ -8,7 +8,7 @@ A cross-platform Python GUI that:
 1. **Downloads** audio from **YouTube or SoundCloud** via `yt-dlp` – or lets you drag-and-drop / select a local file.  
 2. **Transcodes** to MP3 at the bitrate you choose (FFmpeg).  
 3. **Splits** the track into stems with **Demucs v4** (choose any model; 2-stem or full).  
-4. **Analyzes** the original track’s **tempo (BPM)** and **musical key** using **Essentia**.  
+4. **Analyzes** the original track's **tempo (BPM)** and **musical key** using **Essentia**.  
 5. Shows a live **progress bar** and detailed log.
 
 Result: a folder of stems (vocals, drums, bass, other, etc.) plus BPM + key read-outs.
@@ -55,3 +55,11 @@ pip install -r requirements.txt
 
 # run
 python3 yt2stems.py
+
+## ⚠️ Disclaimer
+
+This tool is intended for educational and personal use only.
+
+Downloading content from YouTube, SoundCloud, or any third-party platform may violate their Terms of Service. It is the user's responsibility to ensure they have the legal right to download and process any content.
+
+The author does not endorse or condone piracy and assumes no liability for misuse of this software.
