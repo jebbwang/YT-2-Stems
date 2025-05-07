@@ -30,14 +30,13 @@ Result: a folder of stems (vocals, drums, bass, other, etc.) plus BPM + key read
 
 ## 📦 Prerequisites
 
-| Tool | Why | Install |
-|------|-----|---------|
-| **Python 3.9+** | runtime | [python.org](https://python.org) |
-| **FFmpeg**      | MP3 transcode | `brew install ffmpeg` / `choco install ffmpeg` |
-| **Virtual env** | isolate deps | `python -m venv .venv` |
-| **Demucs v4**   | stem split | installed via `pip` |
-| **Essentia**    | BPM / key  | installed via `pip` (needs *NumPy < 2* right now) |
-| **PySide 6, Torch, yt-dlp, soundfile** | GUI & audio back-end | pulled in by `requirements.txt` |
+- **Python 3.9+**  
+- **FFmpeg** (must be on your PATH)
+
+All other Python dependencies are installed via:
+
+```bash
+pip install -r requirements.txt
 
 ---
 
