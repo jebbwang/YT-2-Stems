@@ -28,17 +28,7 @@ Result: a folder of stems (vocals, drums, bass, other, etc.) plus BPM + key read
 
 ---
 
-## 📦 Prerequisites
-
-- **Python 3.9+**  
-- **FFmpeg** (must be on your PATH)
-
-All other Python dependencies are installed via:
-
-```bash
-pip install -r requirements.txt
-
----
+Dependencies are managed via `requirements.txt`—no further prerequisites needed.
 
 ## 🚀 Quick Start
 
@@ -55,4 +45,4 @@ source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 
 # run
-python3 yt2stems.py
+python3 yt2stems.py```
